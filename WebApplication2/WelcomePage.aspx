@@ -8,19 +8,25 @@
     <!-- Add Bootstrap for styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
         /* Styling for the news ticker */
         .news-ticker {
-            background-color: #f2f2f2;
-            padding: 10px;
+            background-color: #f8f9fa;
+            padding: 5px;
             overflow: hidden;
             white-space: nowrap;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
         }
 
         .news-text {
             display: inline-block;
-            font-size: 18px;
+            font-size: 16px;
             color: #ff0000;
-            animation: slideLeft 10s linear infinite;
+            animation: slideLeft 12s linear infinite;
         }
 
         @keyframes slideLeft {
@@ -34,16 +40,16 @@
 
         /* Styling for the image carousel */
         .carousel-item img {
-            height: 400px; /* Fixed height */
+            height: 300px; /* Reduced height */
             width: 100%; /* Full width */
             object-fit: cover; /* Ensure the image covers the area */
         }
 
         /* Button styles */
         .btn-custom {
-            font-size: 16px;
-            padding: 10px 20px;
-            margin: 10px;
+            font-size: 14px;
+            padding: 8px 16px;
+            margin: 5px;
             border-radius: 25px;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -55,38 +61,48 @@
 
         /* Logo styling */
         .logo {
-            max-width: 100px; /* Fixed size for logos */
+            max-width: 80px; /* Adjusted size for logos */
             height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Centered heading text */
+        h1 {
+            font-size: 24px; /* Reduced heading size */
+        }
+
+        /* Reduce margin for action buttons */
+        .action-buttons {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body style="text-align: center">
     <form id="form1" runat="server">
-        <div class="container mt-5">
-            <div class="row align-items-center">
+        <div class="container mt-4">
+            <div class="row align-items-center mb-4">
                 <!-- Left Logo -->
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/100" alt="Logo 1" class="logo" runat="server" id="logo1" />
+                <div class="col-md-3 text-center">
+                    <img src="https://img.freepik.com/free-vector/golden-elegant-corporative-logo-template_23-2148214854.jpg?t=st=1727975859~exp=1727976459~hmac=7547f48b2621a06cce132b6ab2821f22d2c34da9593ed5642de347b35e745942" alt="Logo 1" class="logo" runat="server" id="logo1" />
                 </div>
 
                 <!-- Page Heading -->
-                <div class="col-md-4">
+                <div class="col-md-6 text-center">
                     <h1 class="text-primary"><strong>Atharv Digital Seva Kendra</strong></h1>
                 </div>
 
                 <!-- Right Logo -->
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/100" alt="Logo 2" class="logo" runat="server" id="logo2" />
+                <div class="col-md-3 text-center">
+                    <img src="https://img.freepik.com/free-vector/golden-elegant-corporative-logo-template_23-2148214854.jpg?t=st=1727975859~exp=1727976459~hmac=7547f48b2621a06cce132b6ab2821f22d2c34da9593ed5642de347b35e745942" alt="Logo 2" class="logo" runat="server" id="logo2" />
                 </div>
             </div>
 
             <!-- News Ticker -->
-            <div class="news-ticker mt-4">
+            <div class="news-ticker mb-4">
                 <span class="news-text" id="newsContent" runat="server">Loading news...</span>
             </div>
 
             <!-- Image Slider / Carousel -->
-            <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
                 <div class="carousel-inner" runat="server" id="imageCarousel">
                     <!-- Repeater for dynamic images will be filled here -->
                 </div>
@@ -101,7 +117,7 @@
             </div>
 
             <!-- Action Buttons -->
-            <div class="mt-5">
+            <div class="action-buttons mt-4">
                 <a href="MahaOnline.aspx" class="btn btn-primary btn-custom">महा-ऑनलाइन</a>
                 <a href="ShaskiyYojana.aspx" class="btn btn-primary btn-custom">शासकीय योजना</a>
                 <a href="ShaskiyKarya.aspx" class="btn btn-primary btn-custom">शासकीय कार्य</a>

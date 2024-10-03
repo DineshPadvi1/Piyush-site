@@ -12,6 +12,7 @@ namespace WebApplication2
             {
                 //LoadNews();
                 LoadCarouselImages();
+                LoadLogosFromDatabase();
             }
         }
 
@@ -73,9 +74,9 @@ namespace WebApplication2
             // Sample online image URLs
             string[] imageUrls = new string[]
             {
-                "https://via.placeholder.com/800x400.png?text=Image+1",
-                "https://via.placeholder.com/800x400.png?text=Image+2",
-                "https://via.placeholder.com/800x400.png?text=Image+3"
+                "https://img.freepik.com/free-vector/golden-bird-logo-design_1195-336.jpg?t=st=1727974577~exp=1727975177~hmac=035c14eadfbc690e5eba878043454bc8de497ac9f3fce4e8d8b5bfe959a5e32d",
+                "https://png.pngtree.com/png-vector/20220226/ourmid/pngtree-100-natural-product-label-design-vector-and-png-png-image_4463862.png",
+                "https://i.pinimg.com/736x/30/79/eb/3079eb9d9dcea507c1e9d0d929bc8370.jpg"
             };
 
             // Add images to the carousel dynamically
@@ -96,6 +97,44 @@ namespace WebApplication2
                 imageCarousel.Controls.Add(div);
                 counter++;
             }
+            //}
+        }
+
+        private void LoadLogosFromDatabase()
+        {
+            // Connection string from web.config
+            //string connectionString = ConfigurationManager.ConnectionStrings["YourConnectionString"].ConnectionString;
+
+            //using (SqlConnection conn = new SqlConnection(connectionString))
+            //{
+            //    try
+            //    {
+            //        conn.Open();
+            //         SQL Query to get the logos
+            //        string query = "SELECT Logo1Url, Logo2Url FROM LogosTable WHERE Id = 1"; // Change according to your table
+
+            //        SqlCommand cmd = new SqlCommand(query, conn);
+
+            //        SqlDataReader reader = cmd.ExecuteReader();
+
+            //        if (reader.Read())
+            //        {
+            //             Assuming you have two columns: Logo1Url and Logo2Url
+            //            string logo1Url = reader["Logo1Url"].ToString();
+            //            string logo2Url = reader["Logo2Url"].ToString();
+
+            //             Set the image URLs dynamically
+            //            logo1.Src = logo1Url;
+            //            logo2.Src = logo2Url;
+            //        }
+
+            //        reader.Close();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //         Handle your exception here (logging, user-friendly message, etc.)
+            //        Console.WriteLine("Error: " + ex.Message);
+            //    }
             //}
         }
     }

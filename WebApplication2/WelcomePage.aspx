@@ -82,7 +82,7 @@
             <div class="row align-items-center mb-4">
                 <!-- Left Logo -->
                 <div class="col-md-3 text-center">
-                    <img src="https://img.freepik.com/free-vector/golden-elegant-corporative-logo-template_23-2148214854.jpg?t=st=1727975859~exp=1727976459~hmac=7547f48b2621a06cce132b6ab2821f22d2c34da9593ed5642de347b35e745942" alt="Logo 1" class="logo" runat="server" id="logo1" />
+                    <img src="<%= ResolveUrl("~/images/Logo/logo1.jpg") %>" alt="Logo 1" class="logo" id="logo1" />
                 </div>
 
                 <!-- Page Heading -->
@@ -92,7 +92,7 @@
 
                 <!-- Right Logo -->
                 <div class="col-md-3 text-center">
-                    <img src="https://img.freepik.com/free-vector/golden-elegant-corporative-logo-template_23-2148214854.jpg?t=st=1727975859~exp=1727976459~hmac=7547f48b2621a06cce132b6ab2821f22d2c34da9593ed5642de347b35e745942" alt="Logo 2" class="logo" runat="server" id="logo2" />
+                    <img src="<%= ResolveUrl("~/images/Logo/logo2.jpg") %>" alt="Logo 2" class="logo" id="logo2" />
                 </div>
             </div>
 

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2
+namespace WebApplication2.Login
 {
 
 
-    public partial class WelcomePage
+    public partial class ContentManagement
     {
 
         /// <summary>
@@ -24,21 +24,30 @@ namespace WebApplication2
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// newsContent control.
+        /// btnUpdateAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl newsContent;
+        protected global::System.Web.UI.WebControls.Button btnUpdateAlert;
 
         /// <summary>
-        /// imageCarousel control.
+        /// imageUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl imageCarousel;
+        protected global::System.Web.UI.WebControls.FileUpload imageUpload;
+
+        /// <summary>
+        /// alertMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl alertMessage;
     }
 }
